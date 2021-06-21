@@ -2,6 +2,6 @@ defmodule HelixWeb.PageController do
   use HelixWeb, :controller
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    render_inertia(conn, "Home", props: %{msg: "it works!"})
   end
 end

@@ -23,6 +23,7 @@ defmodule HelixWeb do
 
       import Plug.Conn
       import HelixWeb.Gettext
+      import InertiaPhoenix.Controller
       alias HelixWeb.Router.Helpers, as: Routes
     end
   end
