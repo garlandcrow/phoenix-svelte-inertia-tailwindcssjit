@@ -20,19 +20,3 @@ createInertiaApp({
     new App({ target: el, props })
   },
 })
-
-// const app = document.getElementById('app')
-
-// if (app) {
-//   new InertiaApp({
-//     target: app,
-//     props: {
-//       initialPage: JSON.parse(app.dataset.page),
-//       resolveComponent: async (name) => {
-//         let page = await import(`./pages/${name}.svelte`)
-//         // page.layout = page.layout === undefined ? Layout : page.layout
-//         return page
-//       },
-//     },
-//   })
-// }
