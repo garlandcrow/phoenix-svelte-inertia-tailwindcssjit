@@ -26,6 +26,7 @@ config :helix, HelixWeb.Endpoint,
       "--mode",
       "development",
       "--colors",
+      "--hot",
       "--watch-stdin",
       cd: Path.expand("../assets", __DIR__)
     ]
