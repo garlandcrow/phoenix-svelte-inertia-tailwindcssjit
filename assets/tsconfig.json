@@ -2,8 +2,6 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
     "paths": {
-      // "module": ["ESNext"],
-      // "baseUrl": ["./js"],
       "@/*": ["./js/*"]
     },
     "resolveJsonModule": true
