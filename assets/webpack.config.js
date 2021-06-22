@@ -57,6 +57,9 @@ module.exports = (env, options) => {
                 optimistic: false,
               },
               preprocess: require('svelte-preprocess')({
+                defaults: {
+                  script: 'typescript',
+                },
                 postcss: true,
               }),
             },

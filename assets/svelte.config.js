@@ -11,15 +11,19 @@ const createPreprocessors = ({ sourceMap }) => [
     sourceMap,
     defaults: {
       script: 'typescript',
-      style: 'postcss',
     },
-    postcss: true,
+    postcss: {
+      plugins: [
+        require('postcss-import'),
+        require('postcss-nested'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
+    },
   }),
-  // You could have more preprocessors, like mdsvex
 ]
 
 module.exports = {
-  createPreprocessors,
   // Options for `svelte-check` and the VS Code extension
   preprocess: createPreprocessors({ sourceMap: true }),
 }
