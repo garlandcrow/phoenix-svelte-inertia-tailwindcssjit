@@ -8,7 +8,7 @@ defmodule Helix.Application do
   def start(_type, _args) do
     children = [
       # Start the Ecto repository
-      Helix.Repo,
+      # Helix.Repo,
       # Start the Telemetry supervisor
       HelixWeb.Telemetry,
       # Start the PubSub system
